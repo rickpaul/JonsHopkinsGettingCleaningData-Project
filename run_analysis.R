@@ -1,5 +1,4 @@
-rm(list=ls())
-setwd("/Users/Rickpaul/Desktop/Jons Hopkins Data Science/Class3-GettingCleaningData/UCI HAR Dataset")
+# rm(list=ls())
 
 #Load training data
 train_subjects_values<- read.table("./train/subject_train.txt")
@@ -55,6 +54,9 @@ meltedData$subjAct <- paste(meltedData$Subject,meltedData$Activity)
 flattenedData <- acast(meltedData,subjAct ~ variable, mean)
 
 flattenedData
+
+rm("meltedData")
+rm("meansStdsOnly")
 
 #Write data
 write.table(flattenedData,"../summaryData.txt",row.name=F)
