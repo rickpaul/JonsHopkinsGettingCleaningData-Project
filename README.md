@@ -18,4 +18,10 @@ Codebook:
     3. Any data columns not pertaining to mean or standard deviation measurements, or the Subject and Activity labels, were removed. There were 66 such data points (not including the Subject and Activity).
     4. (The Activity labels were also given explicit labels, rather than numeric categories, for their 6 values, which were described in the summary above)
     5. The data was averaged, by Subject and Activity. (e.g. Subject 1, Walking, was summarized along its 66 mean and standard deviation points)
-    6. The data was written out.
+    6. The data was written out to a file named "summaryData.txt" in the same directory as the code.
+    
+Notes:
+    * The code must be in the unzipped data directory that can be downloaded from the above link, to work.
+    * Labels were removed from the 'tidy data set' data file to make it machine readable.
+    * Other data about the project can be found on the [Coursera class page](https://class.coursera.org/getdata-008/human_grading/view/courses/972586/assessments/3/submissions) and its [associated forums](https://class.coursera.org/getdata-008/forum/list?forum_id=10009).
+    

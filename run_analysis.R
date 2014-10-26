@@ -59,4 +59,4 @@ rm("meltedData")
 rm("meansStdsOnly")
 
 #Write data
-write.table(flattenedData,"../summaryData.txt",row.name=F)
+write.table(flattenedData,"./summaryData.txt",row.name=F)
